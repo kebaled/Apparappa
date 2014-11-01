@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="alex.apparappa" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+//products
+        <activity
+            android:name=".products"
+            android:label="@string/titleProduct" >
+        </activity>
+
+        <!-- All Product Activity -->
+        <activity
+            android:name=".allProducts"
+            android:label="Elenco Prodotti" >
+        </activity>
+
+        <!-- Add Product Activity -->
+        <activity
+            android:name=".addProduct"
+            android:label="Aggingi prodotto" >
+        </activity>
+
+        <!-- Edit Product Activity -->
+        <activity
+            android:name=".editProduct"
+            android:label="Modifica Prodotto" >
+        </activity>
+
+//producers
+        <activity
+            android:name=".producers"
+            android:label="@string/titleProducer" >
+        </activity>
+
+        <!-- All Producers Activity -->
+        <activity
+            android:name=".allProducers"
+            android:label="Elenco Produttori" >
+        </activity>
+
+        <!-- Add Producer Activity -->
+        <activity
+            android:name=".addProducer"
+            android:label="Aggiungi Produttore" >
+        </activity>
+
+        <!-- Edit Producer Activity -->
+        <activity
+            android:name=".editProducer"
+            android:label="Modifica Produttore" >
+        </activity>
+
+        <activity
+            android:name=".selectProductsOfProducer"
+            android:label="Aggiungi Prodotti al Produttore" >
+        </activity>
+
+
+
+    </application>
+
+    <!--  Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">apparappa</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="titleProduct">Operazioni sui Prodotti</string>
+    <string name="titleViewProducts">Elenco prodotti</string>
+    <string name="titleCreateProduct">Inserisci prodotto</string>
+    <string name="btnViewProducts">Elenco prodotti</string>
+    <string name="btnAddProduct">Inserisci prodotto</string>
+    <string name="btnBack2Product">Torna al Menù Prodotti</string>
+
+    <string name="titleProducer">Operazioni sui Produttori</string>
+    <string name="titleViewProducers">Elenco produttori</string>
+    <string name="titleCreateProducer">Inserisci produttore</string>
+    <string name="btnViewProducers">Elenco produttori</string>
+    <string name="btnAddProducer">Inserisci produttore</string>
+    <string name="btnBack2MenuProducer">Torna al Menù Produttori</string>
+
+    <string name="btnBack2MenuGen">Torna al menù principale</string>
+
+    <string name="labelNome">Nome</string>
+    <string name="labelStoria">Storia</string>
+    <string name="labelCellulare">Cellulare/informazioni di contatto</string>
+
+
+
+    <string name="btnSave">salva</string>
+    <string name="btnCancel">annulla</string>
+    <string name="btnDelete">cancella</string>
+    <string name="btnBack">indietro</string>
+
+    <string name="productsOfProducer">Cosa Produco: </string>
+    <string name="btnProductOfProducer">Aggiungi/Elimina prodotti </string>
+
+
+</resources>

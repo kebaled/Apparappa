@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".products"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/titleProduct"
+        android:paddingTop="20dp"
+        android:textSize="20dp"
+        android:id="@+id/titleProduct" />
+
+
+    <!--  Sample Dashboard screen with Two buttons -->
+    <!--  Button to view all products screen -->
+    <Button android:id="@+id/btnViewProducts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnViewProducts"
+        android:layout_marginTop="25dip"/>
+
+    <!--  Button to create a new product screen -->
+    <Button android:id="@+id/btnCreateProduct"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAddProduct"
+        android:layout_marginTop="25dip"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnBack"
+        android:layout_marginTop="50dip"
+        />
+</LinearLayout>

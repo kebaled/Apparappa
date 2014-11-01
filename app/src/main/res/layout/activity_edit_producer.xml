@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Name Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelNome"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"/>
+
+    <!-- Input Name -->
+    <EditText android:id="@+id/inputNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:singleLine="true"
+        />
+
+    <!-- Storia Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelStoria"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"/>
+
+    <!-- Input Storia -->
+    <EditText android:id="@+id/inputStoria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:singleLine="true"
+       />
+
+    <!-- Cellulare Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelCellulare"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"/>
+
+    <!-- Input cellulare -->
+    <EditText android:id="@+id/inputCellulare"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:lines="4"
+        android:gravity="top"/>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Button Add Producer -->
+        <Button android:id="@+id/btnSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSave"
+            android:layout_weight="1"/>
+        <!-- Button Delete Producer -->
+        <Button android:id="@+id/btnDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnDelete"
+            android:layout_weight="1"/>
+        <!-- Button Cancel Producer -->
+        <Button android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnCancel"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--  Elenco Prodotti: qui o in un'altra activity?? -->
+        <TextView android:id="@+id/productsOfProducer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titleViewProducts"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:lines="2"
+            />
+
+        <!--meglio in un'altra activity ??   magari solo
+        un elenco semplice separato da virgole e cliccabile per i dettagli con list view
+        che chiama changeProductOfProducer-->
+        <!--ListView android:id="@+id/listViewProductsOfProducers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" /-->
+
+        <Button
+            android:id="@+id/btnAddProducstOfProducer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnProductOfProducer"/>
+
+    </LinearLayout>
+</LinearLayout>
