@@ -4,9 +4,36 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ListView android:id="@+id/listChooseProductsOfProducers"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtNameOfProducer" />
+
+
+    <ListView android:id="@android:id/list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
+
+    <!--Textview informazione-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/txtInfoDelete"
+        android:text="@string/txtInfoDelete"
+        android:textAlignment="gravity"
+        />
+
+    <!-- Button Delete Products to Producer -->
+    <Button android:id="@+id/btnDeleteFinally"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnDeleteFinally"
+         />
+
+
 
     <LinearLayout android:layout_width="fill_parent"
         android:layout_height="wrap_content"

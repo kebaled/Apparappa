@@ -44,8 +44,8 @@ public class allProducers extends ListActivity {
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_PRODUCERS = "produttori";
-    private static final String TAG_PID = "idproduttore";
-    private static final String TAG_NAME = "nome";
+    private static final String TAG_PIDer = "idproduttore";
+    private static final String TAG_NAMEer = "nome";
 
     // products JSONArray
     JSONArray producers = null;
@@ -77,7 +77,7 @@ public class allProducers extends ListActivity {
                 // Starting new intent
                 Intent in = new Intent(getApplicationContext(),  editProducer.class);
                 // sending pid to next activity
-                in.putExtra(TAG_PID, pid);
+                in.putExtra(TAG_PIDer, pid);
                 // starting new activity and expecting some response back
                 startActivityForResult(in, 100);
             }
@@ -160,15 +160,15 @@ public class allProducers extends ListActivity {
                             JSONObject c = producers.getJSONObject(i);
 
                             // Storing each json item in variable
-                            String id = c.getString(TAG_PID);
-                            String name = c.getString(TAG_NAME);
+                            String id = c.getString(TAG_PIDer);
+                            String name = c.getString(TAG_NAMEer);
 
                             // creating new HashMap
                             HashMap<String, String> map = new HashMap<String, String>();
 
                             // adding each child node to HashMap key => value
-                            map.put(TAG_PID, id);
-                            map.put(TAG_NAME, name);
+                            map.put(TAG_PIDer, id);
+                            map.put(TAG_NAMEer, name);
 
                             // adding HashList to ArrayList
                             producersList.add(map);
@@ -202,8 +202,8 @@ public class allProducers extends ListActivity {
                          * */
                         ListAdapter adapter = new SimpleAdapter(
                                 allProducers.this, producersList,
-                                R.layout.list_item, new String[] { TAG_PID,
-                                TAG_NAME},
+                                R.layout.list_item, new String[] { TAG_PIDer,
+                                TAG_NAMEer},
                                 new int[] { R.id.pid, R.id.name });
                         // updating listview
                         setListAdapter(adapter);

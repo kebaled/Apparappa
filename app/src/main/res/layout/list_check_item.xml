@@ -5,22 +5,31 @@
     android:orientation="vertical"
     android:padding="6dip" >
 
+    <!-- Product id (pid) - will be HIDDEN - used to pass to other activity -->
+    <TextView
+        android:id="@+id/pid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/nameP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkP"
+        android:layout_alignBottom="@+id/checkP"
+        android:layout_toRightOf="@+id/checkP"
+        android:layout_marginStart="30px"
+        android:text="TextView" />
+
+
     <CheckBox
         android:id="@+id/checkP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:text="CheckBox" />
-
-    <TextView
-        android:id="@+id/nameP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/checkBox1"
-        android:layout_alignBottom="@+id/checkBox1"
-        android:layout_toRightOf="@+id/checkBox1"
-        android:text="TextView" />
+        android:focusableInTouchMode="false" />
 
 </RelativeLayout>

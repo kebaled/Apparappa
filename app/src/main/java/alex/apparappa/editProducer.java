@@ -108,8 +108,10 @@ public class editProducer extends Activity {
         btnAddProductsOfProducer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), selectProductsOfProducer.class);
-                startActivity(i);
+                Intent i = new Intent(getApplicationContext(), changeProductsOfProducer.class);
+                i.putExtra(TAG_PID,pid);
+                i.putExtra(TAG_NAME, txtName.getText().toString());
+                startActivityForResult(i,100);//todo  : devo gestire il ritorno per aggiornare l'elenco dei prodotti
             }
         });
     }

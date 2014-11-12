@@ -1,7 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Producer Name Label -->
+    <TextView android:id="@+id/txtNameOfProducer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titleProductOfProducer"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <!-- Product Name Label -->
+    <!--TextView android:id="@+id/txtNameOfProduct"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name quello vero"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"/-->
+
+
+    <!-- InfoTag Label -->
+    <TextView android:id="@+id/txtInfoTag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtInfoTag"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"/>
+
+    <!-- Input Info Tag -->
+    <EditText android:id="@+id/inputInfoTag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:lines="4"/>
+
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Button Save All Products of Producer-->
+        <Button android:id="@+id/btnSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSave"
+            android:layout_weight="1"/>
+
+        <!-- Button Cancel and go Back -->
+        <Button android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnCancel"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
 
 </LinearLayout>

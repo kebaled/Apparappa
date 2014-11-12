@@ -65,10 +65,14 @@
         </activity>
 
         <activity
-            android:name=".selectProductsOfProducer"
+            android:name=".changeProductsOfProducer"
             android:label="Aggiungi Prodotti al Produttore" >
         </activity>
-
+        <!-- Edit single Product of Producer Activity -->
+        <activity
+            android:name=".editProductsOfProducer"
+            android:label="Modifica Prodotto di un Produttore" >
+        </activity>
 
 
     </application>

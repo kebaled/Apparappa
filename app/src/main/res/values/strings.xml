@@ -34,6 +34,10 @@
 
     <string name="productsOfProducer">Cosa Produco: </string>
     <string name="btnProductOfProducer">Aggiungi/Elimina prodotti </string>
+    <string name="titleProductOfProducer">Produttore:</string>
+    <string name="txtInfoTag">Etichetta Informativa</string>
 
+    <string name="txtInfoDelete">NB: i prodotti deselezionati non saranno eliminati saranno considerati prodotti non più in vendita. Attenzione cliccando sul pulsante verranno cancellati tutti i prodotti precedentemente inseriti comprese le etichette informative</string>
+    <string name="btnDeleteFinally">Elimina definitivamente</string>
 
 </resources>
