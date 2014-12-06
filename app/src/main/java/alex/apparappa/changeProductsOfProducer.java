@@ -36,9 +36,10 @@ import java.util.List;
  */
 public class changeProductsOfProducer extends ListActivity {
 
-    private Button btnCancel;
-    private Button btnSave;
-    private Button btnDeleteFinally;
+    //private Button btnCancel;
+    //private Button btnSave;
+    private Button btnDone;
+    //private Button btnDeleteFinally;
     private String pid;//pid of product
     private String pidEr;//pid of producEr
     private String nameEr;//nome of producEr
@@ -60,9 +61,6 @@ public class changeProductsOfProducer extends ListActivity {
 
     // url to delete product of certain producer
     private static String url_delete_product_of_producer = "http://www.apparappa.altervista.org/appaServices/productsOfProducer/delete_product_of_producer.php";
-
-    // url to delete product of certain producer
-    private static String url_delete_finally_product_of_producer = "http://www.apparappa.altervista.org/appaServices/productsOfProducer/delete_all_products_of_producer.php";
 
     // JSON Node names
     private static final String TAG_PIDer = "idproduttore";
@@ -95,14 +93,7 @@ public class changeProductsOfProducer extends ListActivity {
         // Loading products of certain producer in Background Thread
         new LoadAllProductsOfProducer().execute();
 
-        btnDeleteFinally = (Button) findViewById(R.id.btnDeleteFinally);
-        btnDeleteFinally.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                new DeleteFinallyProductsOfProducer().execute();
-            }
-        });
-
+        /*
         btnSave = (Button) findViewById(R.id.btnSaveList);
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,6 +109,17 @@ public class changeProductsOfProducer extends ListActivity {
                 finish();
             }
         });
+        */
+        btnDone = (Button) findViewById(R.id.btnDone);
+        btnDone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = getIntent();
+                setResult(100,i);
+                finish();
+            }
+        });
+
     }
 
     // Response from Edit Products Of producer Activity
@@ -459,69 +461,4 @@ public class changeProductsOfProducer extends ListActivity {
             pDialog.dismiss();
         }
      }
-
-    /*****************************************************************
-     * Background Async Task to Delete Finally Products of Producer
-     * */
-
-    class DeleteFinallyProductsOfProducer extends AsyncTask<String, String, String> {
-
-        /**
-         * Before starting background thread Show Progress Dialog
-         * */
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            pDialog = new ProgressDialog(changeProductsOfProducer.this);
-            pDialog.setMessage("Deleting Products of Producer...");
-            pDialog.setIndeterminate(false);
-            pDialog.setCancelable(true);
-            pDialog.show();
-        }
-
-        /**
-         * Deleting product of producer (really product is not deleted but not for sale)
-         * */
-
-        protected String doInBackground(String... args) {
-
-            // Check for success tag
-            int success;
-            try {
-                // Building Parameters
-                List<NameValuePair> params = new ArrayList<NameValuePair>();
-                params.add(new BasicNameValuePair("idproduttore", pidEr));
-
-                // getting product details by making HTTP request
-                JSONObject json = jParser.makeHttpRequest(url_delete_finally_product_of_producer, "GET", params);
-
-                // check your log for json response
-                Log.d("Delete All Products of Producer", json.toString());
-
-                // json success tag
-                success = json.getInt(TAG_SUCCESS);
-                if (success == 1) {
-                    // product successfully deleted
-                    // notify previous activity by sending code 100
-                    //todo serve a qualcosa ?
-                    Intent i = getIntent();
-                    // send result code 100 to notify about product deletion
-                    setResult(100, i);
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-            return null;
-        }
-
-        /**
-         * After completing background task Dismiss the progress dialog
-         * **/
-
-        protected void onPostExecute(String file_url) {
-            // dismiss the dialog once product deleted
-            pDialog.dismiss();
-        }
-    }
 }

@@ -2,28 +2,46 @@
 <resources>
 
     <string name="app_name">apparappa</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">apparappa</string>
 
+    <!--product-->
     <string name="titleProduct">Operazioni sui Prodotti</string>
     <string name="titleViewProducts">Elenco prodotti</string>
+    <string name="titleNoProducts">Nessun prodotto!</string>
     <string name="titleCreateProduct">Inserisci prodotto</string>
-    <string name="btnViewProducts">Elenco prodotti</string>
+    <string name="btnProducts">Elenco prodotti</string>
     <string name="btnAddProduct">Inserisci prodotto</string>
     <string name="btnBack2Product">Torna al Menù Prodotti</string>
 
+    <!--producer-->
     <string name="titleProducer">Operazioni sui Produttori</string>
     <string name="titleViewProducers">Elenco produttori</string>
     <string name="titleCreateProducer">Inserisci produttore</string>
     <string name="btnViewProducers">Elenco produttori</string>
     <string name="btnAddProducer">Inserisci produttore</string>
     <string name="btnBack2MenuProducer">Torna al Menù Produttori</string>
-
-    <string name="btnBack2MenuGen">Torna al menù principale</string>
-
+    <!--edit producer-->
     <string name="labelNome">Nome</string>
     <string name="labelStoria">Storia</string>
     <string name="labelCellulare">Cellulare/informazioni di contatto</string>
+
+
+    <!--orders-->
+    <string name="titleOrder">Operazioni possibili sui moduli</string>
+    <string name="titleViewOrders">Lista Distribuzioni</string>
+    <string name="titleNoOrders">Nessun ordine!</string>
+    <string name="titleCreateOrders">Nuova distribuzione</string>
+    <string name="btnOrders">Lista Distribuzioni</string>
+    <string name="btnAddOrder">Nuova distribuzione</string>
+    <string name="btnBack2Order">Torna al Menù Ordini</string>
+    <!--edit order-->
+    <string name="labelDate">Data distribuzione</string>
+    <string name="labelNote">Note sulla consegna (luogo e ora)</string>
+    <string name="btnSaveAndContinue">Salva e continua</string>
+    <string name="pick_date">Imposta Data</string>
+
+    <string name="btnBack2MenuGen">Torna al menù principale</string>
+
 
 
 
@@ -31,13 +49,19 @@
     <string name="btnCancel">annulla</string>
     <string name="btnDelete">cancella</string>
     <string name="btnBack">indietro</string>
+    <string name="btnDone">Fatto</string>
 
     <string name="productsOfProducer">Cosa Produco: </string>
     <string name="btnProductOfProducer">Aggiungi/Elimina prodotti </string>
     <string name="titleProductOfProducer">Produttore:</string>
     <string name="txtInfoTag">Etichetta Informativa</string>
 
-    <string name="txtInfoDelete">NB: i prodotti deselezionati non saranno eliminati saranno considerati prodotti non più in vendita. Attenzione cliccando sul pulsante verranno cancellati tutti i prodotti precedentemente inseriti comprese le etichette informative</string>
-    <string name="btnDeleteFinally">Elimina definitivamente</string>
+    <string name="txtInfoDelete">NB: i prodotti deselezionati non saranno eliminati saranno considerati prodotti non più in vendita.</string>
+    <string name="txtInfoDeleteFinally">NB: i prodotti tra parentesi sono prodotti non più in vendita. Cliccando su "Elimina Vecchi prodotti" questi prodotti saranno eliminati ma ATTENZIONE saranno eliminate anche le etichette informative precedentemnte inserite</string>
+    <string name="btnDeleteFinally">Elimina vecchi prodotti</string>
+
+
+
+    <color name="castagno">#CD5C5C</color>
 
 </resources>

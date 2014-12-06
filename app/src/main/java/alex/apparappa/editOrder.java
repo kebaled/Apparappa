@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,8 +25,9 @@ import java.util.List;
 /**
  * Created by alex on 21/10/14.
  */
-public class editProducer extends Activity {
-
+public class editOrder extends Activity {
+//todo tutto da fare da qui
+    
     private EditText txtName;
     private EditText txtStoria;
     private EditText txtCellulare;
@@ -81,7 +81,7 @@ public class editProducer extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_producer);
+        setContentView(R.layout.activity_edit_order);
 
         // save button
         btnSave = (Button) findViewById(R.id.btnSave);
@@ -185,7 +185,7 @@ public class editProducer extends Activity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            pDialog = new ProgressDialog(editProducer.this);
+            pDialog = new ProgressDialog(editOrder.this);
             pDialog.setMessage("Loading producer details. Please wait...");
             pDialog.setIndeterminate(false);
             pDialog.setCancelable(true);
@@ -265,7 +265,7 @@ public class editProducer extends Activity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            pDialog = new ProgressDialog(editProducer.this);
+            pDialog = new ProgressDialog(editOrder.this);
             pDialog.setMessage("Saving producer ...");
             pDialog.setIndeterminate(false);
             pDialog.setCancelable(true);
@@ -334,7 +334,7 @@ public class editProducer extends Activity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            pDialog = new ProgressDialog(editProducer.this);
+            pDialog = new ProgressDialog(editOrder.this);
             pDialog.setMessage("Deleting Producer...");
             pDialog.setIndeterminate(false);
             pDialog.setCancelable(true);
@@ -399,7 +399,7 @@ public class editProducer extends Activity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            pDialog = new ProgressDialog(editProducer.this);
+            pDialog = new ProgressDialog(editOrder.this);
             pDialog.setMessage("Loading List of products of producer. Please wait...");
             pDialog.setIndeterminate(false);
             pDialog.setCancelable(false);
@@ -474,7 +474,7 @@ public class editProducer extends Activity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            pDialog = new ProgressDialog(editProducer.this);
+            pDialog = new ProgressDialog(editOrder.this);
             pDialog.setMessage("Deleting Products of Producer...");
             pDialog.setIndeterminate(false);
             pDialog.setCancelable(true);

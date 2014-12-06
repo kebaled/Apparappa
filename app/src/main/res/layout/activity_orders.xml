@@ -13,25 +13,25 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/titleProduct"
+        android:text="@string/titleOrder"
         android:paddingTop="20dp"
         android:textSize="20dp"
-        android:id="@+id/titleProduct" />
+        android:id="@+id/titleOrder" />
 
 
     <!--  Sample Dashboard screen with Two buttons -->
     <!--  Button to view all products screen -->
-    <Button android:id="@+id/btnViewProducts"
+    <Button android:id="@+id/btnViewOrders"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnProducts"
+        android:text="@string/btnOrders"
         android:layout_marginTop="25dip"/>
 
     <!--  Button to create a new product screen -->
-    <Button android:id="@+id/btnCreateProduct"
+    <Button android:id="@+id/btnCreateOrder"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnAddProduct"
+        android:text="@string/btnAddOrder"
         android:layout_marginTop="25dip"/>
 
     <Button

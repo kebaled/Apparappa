@@ -87,21 +87,30 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <!--  Elenco Prodotti: qui o in un'altra activity?? -->
-        <TextView android:id="@+id/productsOfProducer"
+
+
+        <LinearLayout
             android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView android:id="@+id/productsOfProducer"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/titleViewProducts"
             android:layout_margin="5dip"
             android:layout_marginBottom="15dip"
             android:lines="2"
+            android:paddingRight="30dp"
             />
-
-        <!--meglio in un'altra activity ??   magari solo
-        un elenco semplice separato da virgole e cliccabile per i dettagli con list view
-        che chiama changeProductOfProducer-->
-        <!--ListView android:id="@+id/listViewProductsOfProducers"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" /-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgInfoDeleteFinally"
+            android:layout_gravity="right"
+            android:background="@color/castagno"
+            android:src="@drawable/ic_action_about"
+            />
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnAddProducstOfProducer"
@@ -110,4 +119,24 @@
             android:text="@string/btnProductOfProducer"/>
 
     </LinearLayout>
+
+    <!--Textview informazione-->
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/txtInfoDeleteFinally"
+        android:text="@string/txtInfoDeleteFinally"
+        android:textAlignment="gravity"
+        android:layout_marginTop="10dp"
+        /-->
+
+
+    <!-- Button Delete Products to Producer -->
+    <Button android:id="@+id/btnDeleteFinally"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnDeleteFinally"
+        android:layout_marginTop="10dp"
+     />
 </LinearLayout>
